@@ -1,0 +1,80 @@
+{
+  "success": true,
+  "products": [
+    {
+      "id": 1,
+      "title": "Apple iPhone X 64GB Silver",
+      "price": 1335,
+      "image": "https://i1.rozetka.ua/goods/2433231/apple_iphone_x_64gb_silver_images_2433231345.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Apple AirPods MMEF2",
+      "price": 210,
+      "image": "https://i1.rozetka.ua/goods/4227424/39086872_images_4227424040.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Apple TV 4K 32GB (MQD22)",
+      "price": 195,
+      "image": "https://i2.rozetka.ua/goods/3316914/copy_apple_mqd22rs_a_5a98323dc22e5_images_3316914039.jpg"
+    },
+    {
+      "id": 4,
+      "title": "NIKE Nightgazer Men Sneaker",
+      "price": 105,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81yhV4KE2YL._UX695_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "DJI Mavic Air",
+      "price": 955,
+      "image": "https://dji-kyiv.com/images/26/kvadrokopter-dji-mavic-air-arctic-white-66685024938649.jpg"
+    },
+    {
+      "id": 6,
+      "title": "GoPro 6",
+      "price": 399,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81hPU3slfyL._SY879_.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Make America Great Again Embroidered Cap",
+      "price": 22.99,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61w%2Bdx%2BZOeL._UX679_.jpg"
+    },
+    {
+      "id": 8,
+      "title": "NIKE Men's Air Max PrimeShoe",
+      "price": 130,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81v-0P4tO1L._UX695_.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Tesla X",
+      "price": 132000,
+      "image": "https://img.gaadicdn.com/images/car-images/520x216/Tesla/Tesla-Model-X/4640/047.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Playstation 4 Pro",
+      "price": 399,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41GGPRqTZtL._AC_US436_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 11,
+      "title": "OXEO Town 9 EF Adult Scooter",
+      "price": 405,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41F8sP4xldL.jpg"
+    },
+    {
+      "id": 12,
+      "title": "All my friends are dead.",
+      "price": 10,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41caDQc%2BEXL._SX376_BO1,204,203,200_.jpg"
+    }
+
+
+
+  ]
+}

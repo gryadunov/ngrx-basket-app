@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/font-awesome/css/font-awesome.css';
+
+.card {
+  margin: 10px;
+}
+
+body {
+  padding: 10px;
+}
+
+.products h5 {
+  // fast not good solutions for long titles
+  min-height: 50px;
+}
+
+.multiply-symbol {
+   color: grey;
+   font-size: 12px;
+   opacity: 0.7;
+}
+
+table {
+  margin-bottom: 5px;
+
+}
+
+app-products-list-item {
+  width: 100%;
+}
+
+.card .card-image {
+  margin:10px;
+  width: calc(100% - 20px);
+  height: 200px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.basket-image {
+  margin:0;
+  width: 75px;
+  height: 75px;
+  background-size:contain;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.multiply-symbol {
+  width: 25px;
+}
+
+.basket-quantity {
+  min-width:20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.opacity-07 {
+  opacity: 0.7;
+}

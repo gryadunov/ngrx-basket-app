@@ -1,0 +1,38 @@
+<table width="100%">
+    <tr width="100%">
+        <td colspan="6">
+            <h6>{{basketItem.title}}</h6>
+        </td>
+    </tr>
+    <tr>
+        <td width="60" align="left" valign="top" rowspan="2">
+            <div class="card-img-top basket-image float-left"
+                 [ngStyle]="{'background-image': getImageUrl(basketItem)}"
+                 [title]="basketItem.title"></div>
+        </td>
+        <td rowspan="2" width="38">
+            <button class="btn text-danger" (click)="remove(basketItem)">
+                <i class="fa fa-trash-o"></i>
+            </button>
+        </td>
+        <td valign="middle">
+            <span class="float-right">{{basketItem.price | customFormat: "currency-2-min"}}</span>
+        </td>
+        <td valign="middle" class="multiply-symbol" align="right">
+            &nbsp;x&nbsp;
+        </td>
+        <td width="115" valign="middle" align="right">
+            <button class="btn text-warning" (click)="changeQuantity(basketItem, -1)">
+                <i class="fa fa-minus"></i>
+            </button>&nbsp;<span class="basket-quantity">{{basketItem.quantity}}</span>&nbsp;<button
+                class="btn text-warning" (click)="changeQuantity(basketItem, 1)">
+            <i class="fa fa-plus"></i>
+        </button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" valign="bottom" align="right">
+            <h5 class="float-right" class="margin:0">{{basketItem.totalPrice | customFormat: "currency-2-min"}}</h5>
+        </td>
+    </tr>
+</table>

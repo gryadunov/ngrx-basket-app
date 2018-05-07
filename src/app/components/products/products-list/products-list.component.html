@@ -1,0 +1,14 @@
+<div class="products" *ngIf="productsListState$ | async as productsListState">
+    <div class="row">
+        <ng-container *ngIf="productsListState.loading;else productsList">
+        <!--Loading...-->
+        </ng-container>
+    </div>
+    <ng-template #productsList>
+        <ng-container *ngFor="let product of productsListState.products">
+            <app-products-list-item class="col-12 col-sm-6 col-md-6 col-xl-3" [product]="product"
+                                    (addToBasket)="onAddToBasket($event)"></app-products-list-item>
+        </ng-container>
+    </ng-template>
+</div>
+

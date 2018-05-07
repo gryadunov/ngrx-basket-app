@@ -1,0 +1,13 @@
+<div class="card" *ngIf="product">
+    <div class="card-img-top card-image"
+         [ngStyle]="{'background-image':getImageUrl(product)}"
+         [title]="product.title"></div>
+    <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text text-right">{{product.price | customFormat:"currency-2"}}</p>
+        <button type="button"
+                class="btn btn-primary float-right"
+                (click)="addProductToBasket(product)">Add to cart
+        </button>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="basket-list" *ngIf="basketListState$ | async as basketListState">
+    <ng-container *ngIf="!basketListState.loaded;else basketList">
+        <!--Loading...-->
+    </ng-container>
+    <ng-template #basketList>
+
+        <ng-container *ngFor="let basketItem of basketListState.basketProducts">
+            <app-basket-list-item [basketItem]="basketItem" (updated)="onUpdate($event)"
+                                (removed)="onRemove($event)"></app-basket-list-item>
+        </ng-container>
+
+        <ng-container *ngIf="basketListState.isEmpty">
+            <div class="align-text-middle text-center opacity-07">
+                <img src="assets/images/empty-basket.png" height="55"> Your card items will be here.</div>
+        </ng-container>
+        <ng-container *ngIf="basketListState.isEmpty === false">
+            <hr>
+            <div class="row">
+                <div class="col-12 col-sm-6 text-left"><h6>Total:</h6></div>
+                <div class="col-12 col-sm-6 text-right"><h4>{{basketListState.total | customFormat: "currency-2"}}</h4>
+                </div>
+            </div>
+            <button type="button" class="btn btn-lg btn-warning float-right" (click)="checkout()">Checkout</button>
+        </ng-container>
+    </ng-template>
+</div>
+
