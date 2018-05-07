@@ -6,8 +6,6 @@ export type Action = BasketActions.All;
 export function BasketReducer(state = initializeBasketState(), action: Action) {
 
   switch (action.type) {
-
-
     case BasketActions.GET_BASKET_LIST_SUCCESS: {
       const basketProducts = action.payload;
       return {
@@ -47,7 +45,6 @@ export function BasketReducer(state = initializeBasketState(), action: Action) {
       };
     }
 
-
     case BasketActions.UPDATE_BASKET_ITEM: {
       const basketProducts = state.basketProducts.map(t => (t.id === action.payload.id ? action.payload : t));
 
@@ -82,7 +79,6 @@ export function BasketReducer(state = initializeBasketState(), action: Action) {
   function countTotal(products) {
     return products.reduce((acc, product) => (acc + product.totalPrice), 0);
   }
-
 
 }
 

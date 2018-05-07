@@ -7,11 +7,8 @@ import {Observable} from 'rxjs/Observable';
 import {Action} from '@ngrx/store';
 import {Actions, Effect} from '@ngrx/effects';
 import {of} from 'rxjs/observable/of';
-
 import {StorageService} from '../../services/storage.service'
 import * as BasketActions from './basket.action';
-
-
 import {STORAGE_BASKET_KEY} from './basket.constants';
 
 @Injectable()
@@ -21,7 +18,6 @@ export class BasketEffects {
               private actions$: Actions) {
   }
 
-
   @Effect()
   GetBasket$: Observable<Action> = this.actions$.ofType<BasketActions.GetBasketList>(BasketActions.GET_BASKET_LIST)
     .mergeMap(action => {
@@ -29,7 +25,6 @@ export class BasketEffects {
       const storageBasketItems = this.StorageService.get(STORAGE_BASKET_KEY, []);
       return of(new BasketActions.GetBasketListSuccess(storageBasketItems as BasketListItemState[]));
     });
-
 
   @Effect() // looks like this a part that can be refactored and simplified
   addToBasket$: Observable<Action> = this.actions$.ofType<BasketActions.AddToBasketList>(BasketActions.ADD_TO_BASKET_LIST)

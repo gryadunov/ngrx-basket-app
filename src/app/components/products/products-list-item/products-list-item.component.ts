@@ -1,7 +1,4 @@
 import { Component, EventEmitter, Input, Output, ChangeDetectionStrategy } from '@angular/core';
-import { Store } from '@ngrx/store';
-
-import { BasketListState } from '../../../store/basket/basket.state';
 
 
 @Component({
@@ -15,12 +12,6 @@ export class ProductsListItemComponent {
   @Input() product;
   @Output() addToBasket = new EventEmitter<any>();
 
-
-  constructor(
-    private store: Store<BasketListState>
-  ) { }
-
-
   getImageUrl(product) {
     return `url('${product.image}')`;
   }
@@ -28,5 +19,4 @@ export class ProductsListItemComponent {
   addProductToBasket(product) {
     this.addToBasket.emit(product)
   }
-
 }

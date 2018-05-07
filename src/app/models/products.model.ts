@@ -5,10 +5,10 @@ export default class Products {
   price: number;
 
   constructor() {
-    this.id = 0
-    this.title = ""
-    this.image = ""
-    this.price = 0
+    this.id = 0;
+    this.title = "";
+    this.image = "";
+    this.price = 0;
   }
 
 }

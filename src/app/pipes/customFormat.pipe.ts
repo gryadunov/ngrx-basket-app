@@ -3,6 +3,7 @@ import {Pipe, PipeTransform} from '@angular/core';
 @Pipe({
   name: 'customFormat'
 })
+
 export class CustomFormatPipeClass implements PipeTransform {
   transform(value, type) {
     if (type === 'currency-3') {

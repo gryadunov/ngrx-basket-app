@@ -1,7 +1,7 @@
-import { BasketListState, BasketListItemState }  from './basket.state'
+import { Action } from '@ngrx/store'
+import { BasketListItemState }  from './basket.state'
 import Basket from '../../models/basket.model'
 
-import {Action} from '@ngrx/store'
 
 export const GET_BASKET_LIST = '[BASKET] GET_BASKET_LIST'
 export const GET_BASKET_LIST_SUCCESS = '[BASKET] GET_BASKET_LIST_SUCCESS'
@@ -46,7 +46,6 @@ export class AddToBasketListError implements Action {
   readonly type = ADD_TO_BASKET_LIST_ERROR
 }
 
-
 export class UpdateBasketItem implements Action {
   readonly type = UPDATE_BASKET_ITEM
 
@@ -66,7 +65,6 @@ export class RemoveBasketItem implements Action {
 
   constructor(public payload: BasketListItemState) {}
 }
-
 
 export class Checkout implements Action {
   readonly type = CHECKOUT_BASKET

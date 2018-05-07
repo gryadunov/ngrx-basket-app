@@ -7,11 +7,11 @@ export default class Basket {
   totalPrice: number;
 
   constructor() {
-    this.id = 0
-    this.title = ""
-    this.image = ""
-    this.price = 0
-    this.quantity = 1
+    this.id = 0;
+    this.title = "";
+    this.image = "";
+    this.price = 0;
+    this.quantity = 1;
     this.totalPrice = 0;
   }
 

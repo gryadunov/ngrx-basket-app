@@ -1,6 +1,5 @@
 import { ProductsItemState }  from './products.state'
-
-import {Action} from '@ngrx/store'
+import { Action } from '@ngrx/store'
 
 export const GET_PRODUCTS = '[Products] GET_PRODUCTS'
 export const GET_PRODUCTS_SUCCESS = '[Products] GET_PRODUCTS_SUCCESS'
@@ -20,4 +19,5 @@ export class GetProductsError implements Action {
   readonly type = GET_PRODUCTS_ERROR
 }
 
-export type All = GetProducts | GetProductsSuccess | GetProductsError
+export type All = GetProducts | GetProductsSuccess | GetProductsError;
+

@@ -1,10 +1,9 @@
 import {Injectable} from '@angular/core';
+
 @Injectable()
 export class StorageService {
 
-  constructor() {}
-
-  public get(key: string, defaultValueInCaseOfAbsent:any = undefined): any {
+  public get(key: string, defaultValueInCaseOfAbsent: any = undefined): any {
     const itemValue = window.localStorage.getItem(key);
     return itemValue ? JSON.parse(itemValue) : defaultValueInCaseOfAbsent;
   }

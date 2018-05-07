@@ -8,10 +8,8 @@ import { Component, EventEmitter, Input, Output, ChangeDetectionStrategy } from 
 export class BasketListItemComponent {
 
   @Input() basketItem;
-  @Output() created = new EventEmitter<any>();
   @Output() removed = new EventEmitter<any>();
   @Output() updated = new EventEmitter<any>();
-  @Output() completed = new EventEmitter<any>();
 
   constructor() { }
 
